@@ -242,6 +242,9 @@ on boot
     chmod 664 /sys/class/leds/green/brightness
     chmod 664 /sys/class/leds/blue/brightness
 
+    # High Brightness Mode
+    chown system system /sys/devices/virtual/graphics/fb0/hbm
+
 # subsystem ramdump collection
 on property:persist.sys.qc.sub.rdump.on=*
     write /sys/module/subsystem_restart/parameters/enable_ramdumps ${persist.sys.qc.sub.rdump.on}
