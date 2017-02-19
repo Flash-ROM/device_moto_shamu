@@ -446,3 +446,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # OEM Unlock reporting
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.oem_unlock_supported=1
+
+# Open GApps
+ifneq ($(HAS_GAPPS),false)
+    $(call inherit-product-if-exists, device/moto/shamu/opengapps.mk)
+    $(call inherit-product-if-exists, vendor/google/build/opengapps-packages.mk)
+endif
