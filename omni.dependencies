@@ -1,14 +1,8 @@
 [
   {
-    "remote": "omnirom",
-    "repository": "android_kernel_moto_shamu",
+    "remote": "github",
+    "repository": "Flash-ROM/kernel_moto_shamu",
     "target_path": "kernel/moto/shamu",
-    "revision": "android-7.1"
-  },
-  {
-    "remote": "omnirom",
-    "repository": "android_hardware_qcom_gps",
-    "target_path": "hardware/qcom/gps",
-    "revision": "android-7.1"
+    "revision": "n7.1.2"
   }
 ]
