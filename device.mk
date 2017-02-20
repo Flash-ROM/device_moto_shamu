@@ -447,6 +447,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.oem_unlock_supported=1
 
+# Use sdcardfs
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.sdcardfs=true
+
 # Open GApps
 ifneq ($(HAS_GAPPS),false)
     $(call inherit-product-if-exists, device/moto/shamu/opengapps.mk)
