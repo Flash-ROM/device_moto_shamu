@@ -41,8 +41,8 @@ PRODUCT_PACKAGES += \
 	PrebuiltKeep \
 	YouTube
 
-# Only build the round icons if they aren't disabled
-ifneq ($(HAS_ROUNDICONS),false)
+# Only build the round icons if they are requested
+ifeq ($(HAS_ROUNDICONS),true)
 	PRODUCT_PACKAGES += PixelLauncherIcons
 
 	DEVICE_PACKAGE_OVERLAYS += \
